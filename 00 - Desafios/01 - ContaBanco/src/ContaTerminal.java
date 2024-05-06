@@ -5,12 +5,13 @@ public class ContaTerminal {
     public static void main(String[] args) {
         //criando o objeto scanner
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
-        
+    
+        System.out.println(" Por favor, digite o número da Agência !");
+        String agencia = scanner.next();
+
         System.out.println("Digite seu nome");
         String nome = scanner.next();
-        
-        System.out.println("Digite o numero da Agencia");
-        String agencia = scanner.next();
+    
 
         System.out.println("Digite o número da conta");
         int conta = scanner.nextInt();
@@ -20,12 +21,7 @@ public class ContaTerminal {
 
         
         //imprimindo os dados obtidos pelo usuario
-        System.out.println("Ola " + nome );
-
-        System.out.println("O número da conta é " + conta + " o número da agencia é " + agencia);
-
-        System.out.println("Meu Saldo é " + saldo);
-        
+        System.out.println("Olá " + nome + ", obrigado por criar uma conta em nosso banco, sua agência é "+ agencia +", conta "+ conta +" e seu saldo "+ saldo +" já está disponível para saque.");
         
     }
 }
